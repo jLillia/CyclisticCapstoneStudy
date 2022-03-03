@@ -1,3 +1,4 @@
+-- Check the bike types to see how many are docked. 
 SELECT
  rideable_type
 FROM
@@ -10,7 +11,9 @@ SELECT
  REPLACE(rideable_type, "docked_bike", "classic_bike") as rideable_type,
 FROM 
  cyclistic.user_data
-
+ 
+ 
+-- Looking for data during invalid ride periods.
 SELECT 
  * 
 FROM 
@@ -19,6 +22,7 @@ WHERE
  TIMESTAMP_DIFF(ended_at, started_at, MINUTE) <= 1 OR
    TIMESTAMP_DIFF(ended_at, started_at, MINUTE) >= 1440;
 
+-- Looking for NULL data in starting and stopping of rides. 
 SELECT 
  * 
 FROM 
@@ -29,14 +33,13 @@ WHERE
  end_lat IS NULL OR
  end_lng IS NULL;
 
+
 SELECT 
  DISTINCT member_casual
 FROM 
  cyclistic.user_data
 
--- 4. Check the start/end station name/id columns for naming inconsistencies
-
-
+-- Finding number of rides by station.
 SELECT 
  start_station_name, count(*)
 FROM 
@@ -55,6 +58,7 @@ GROUP BY
 ORDER BY 
  end_station_name;
 
+-- Counting number of stations
 SELECT 
  COUNT(DISTINCT(start_station_name)) AS unq_startname,
  COUNT(DISTINCT(end_station_name)) AS unq_endname,
