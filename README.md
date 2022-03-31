@@ -1,5 +1,5 @@
 # Cyclistic Capstone Study
-Google Data Analytics Certificate capstone study of a bike sharing company, named Cyclistic. (Full report available on [medium](https://medium.com/@jonathon.lillia/cyclistic-a-capstone-study-100818ced3d).
+Google Data Analytics Certificate capstone study of a bike sharing company, named Cyclistic. (Full report available on [medium](https://medium.com/@jonathon.lillia/cyclistic-a-capstone-study-100818ced3d)).
 
 ## Introduction
 The final project of the Google Data Analytics Certificate (hosted on Coursera) invites students to complete a capstone study. The capstone is used to demonstrate some of the core skills developed throughout the course. I chose to complete a case study on 'Cyclistic', who are a metropolitan bike sharing company based in Chicago, IL. 
@@ -12,6 +12,5 @@ The final project of the Google Data Analytics Certificate (hosted on Coursera) 
 
 ## Other Information
 - The technical tools used in this capstone study were SQL (Google BigQuery) and Tableau (Public).
-- (Medium)
 - To view the SQL queries, click [here for EDA](https://github.com/jLillia/CyclisticCapstoneStudy/blob/2ce01e6919c24a32f9ffa6957fc54a71aa495f09/CyclisticEDA.sql) and [here for the cleaning queries](https://github.com/jLillia/CyclisticCapstoneStudy/blob/main/CyclisticCleaning.sql).
 - The tableau visualisation dashboard is available [here](https://public.tableau.com/app/profile/jonathon.lillia/viz/Cyclistic_16451624829920/Dashboard2).
